@@ -6,8 +6,8 @@ async def main_async(host, port, uri, params=[], headers={}, sni_hostname=None):
     if sni_hostname is not None:
         print('Setting SNI server_name field ')
         #
-        # THIS IS WHERE I DON'T KNOW HOW TO TELL ASYNCIO
-        # TO SET THE SERVER_NAME FIELD TO sni_hostname
+        # THIS IS WHERE I DON'T KNOW HOW TO TELL aiohttp
+        # TO SET THE server_name FIELD TO sni_hostname
         # IN THE SSL SOCKET BEFORE PERFORMING THE SSL HANDSHAKE
         #
     try:
